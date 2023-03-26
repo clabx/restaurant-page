@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div id="content" class="w-screen h-screen flex-col">
+      <div
+        id="header"
+        class="w-full h-[20%] bg-gray-300 flex justify-between pl-12 pr-12 items-center">
+        <div
+          id="logo"
+          class="text-6xl italic select-none cursor-pointer hover:scale-105 hover:transition-all hover:underline">
+          Cafelería
+        </div>
+        <div id="nav">
+          <ul class="flex gap-6 text-2xl">
+            <li
+              id="Home"
+              class="cursor-pointer select-none hover:opacity-60 hover:underline">
+              <a>Home</a>
+            </li>
+            <li
+              id="Menu"
+              class="cursor-pointer select-none hover:opacity-60 hover:underline">
+              <a>Menu</a>
+            </li>
+            <li
+              id="Contact"
+              class="cursor-pointer select-none hover:opacity-60 hover:underline checked:scale-150">
+              <a>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="main" class="w-full h-[70%] bg-gray-500"></div>
+      <div
+        id="footer"
+        class="w-full h-[10%] bg-gray-700 text-slate-100 flex items-center justify-center">
+        <div>I'm a footy footer!</div>
+      </div>
+    </div>
+  </body>
+</html>
