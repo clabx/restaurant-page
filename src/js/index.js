@@ -1,1 +1,3 @@
-console.log("Testing");
+import { goHome } from "./home";
+
+goHome();
