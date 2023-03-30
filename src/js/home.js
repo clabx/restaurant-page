@@ -5,10 +5,12 @@ import tableIMG from "../img/table.webp";
 import manyGrainsIMG from "../img/many-grains.webp";
 const goHome = () => {
   const mainDOM = document.querySelector("#main");
+  mainDOM.classList.add("flex", "flex-col", "flex-wrap");
   const imagesDOM = document.createElement("div");
   imagesDOM.classList.add(
     "h-full",
     "w-4/6",
+    "h-full",
     "bg-slate-300",
     "rounded-xl",
     "flex",
@@ -106,6 +108,30 @@ const goHome = () => {
   imagesDOM.appendChild(secondRow);
   imagesDOM.appendChild(thirdRow);
   mainDOM.appendChild(imagesDOM);
+
+  const rightSectionDOM = document.createElement("div");
+  rightSectionDOM.classList.add(
+    "flex",
+    "flex-col",
+    "w-2/6",
+    "border-2",
+    "ml-3",
+    "mt-auto",
+    "mb-auto",
+    "p-4",
+    "rounded-md",
+    "bg-slate-300",
+    "border-slate-300"
+  );
+  const titleRightSectionDOM = document.createElement("div");
+  const textRightSectionDOM = document.createElement("div");
+  titleRightSectionDOM.textContent = "Welcome to La Cafelería!";
+  titleRightSectionDOM.classList.add("p-4", "text-4xl", "text-center");
+  textRightSectionDOM.textContent =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin leo ante, eleifend in eros eget, scelerisque placerat dui. Ut et nisl ultrices, molestie arcu non, elementum eros.";
+  rightSectionDOM.appendChild(titleRightSectionDOM);
+  rightSectionDOM.appendChild(textRightSectionDOM);
+  mainDOM.appendChild(rightSectionDOM);
 };
 
 export { goHome };
