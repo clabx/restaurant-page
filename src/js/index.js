@@ -1,6 +1,7 @@
 import { clearMain } from "./clearScreen";
 import { goHome } from "./home";
 import { goMenu } from "./menu";
+import { goContact } from "./contact";
 
 goHome();
 
@@ -19,4 +20,5 @@ menu.addEventListener("click", () => {
 const contact = document.querySelector("#Contact");
 contact.addEventListener("click", () => {
   clearMain();
+  goContact();
 });
